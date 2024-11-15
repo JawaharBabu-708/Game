@@ -1,0 +1,40 @@
+
+<h1>
+    Guess The Number
+</h1>
+
+<input id="1">
+
+<button onclick="sum()"> Check</button>
+
+<p id="2"> You are Wrong/Right:</p>
+<p id="3"> Score=10</p>
+<script>
+
+  var a=document.getElementById("1")
+  var b=document.getElementById("2")
+  var c=document.getElementById("3")
+
+  var num=Math.floor(Math.random()*10)+1
+ var boy=10
+  function sum()
+  {
+    var e=a.value 
+    if(e==num)
+  {
+   
+    b.textContent="Right"
+    alert("Your's Lucky Number")
+  }
+  else
+  { 
+    boy=boy-1
+    b.textContent="Wrong"
+    c.textContent="score:"+boy
+  }
+  }
+
+
+
+
+</script>
